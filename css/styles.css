@@ -44,6 +44,8 @@ section {
 /* Unbehaving logo */
 .logo {
   text-decoration: none;
+  padding: 24px 0;
+  display: inline-block;
 }
 .logo:hover,
 .logo:focus-visible {
@@ -80,10 +82,13 @@ header > .container {
 }
 .header-nav-list {
   display: flex;
+
   margin-left: 76px;
   gap: 40px;
 }
 .header-nav-link {
+  display: block;
+  padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-family: 'Roboto', sans-serif;
@@ -186,7 +191,6 @@ header > .container {
 .features-list li {
   width: calc((100% - 24px * 3) / 4);
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -219,8 +223,8 @@ header > .container {
 .team-section {
   background-color: #f4f4fd;
   text-align: center;
-  padding-top: 120px; /*something does not look right here even though I set it to the Figma example*/
-  padding-bottom: 120px; /*same same issue, I think something wrong*/
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-section-main-text {
   font-weight: 700;
@@ -304,13 +308,13 @@ header > .container {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-list img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .portfolio-list p {
   font-size: 16px;
   line-height: 1.5;
@@ -328,6 +332,7 @@ header > .container {
 }
 .footer a {
   text-decoration: none;
+  display: inline-block;
 }
 .footer-business-paragraph {
   font-size: 16px;
